@@ -1,7 +1,12 @@
+import java.text.SimpleDateFormat;
 public class DischargeRecord {
-    int patientID;
+    int patientId;
     Long dischargeTime;
-    DischargeRecord(int patientID){
-        this.patientID=patientID;
+    SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    String dischargeDate;
+    DischargeRecord(int patientId){
+        this.patientId=patientId;
+        this.dischargeTime= System.currentTimeMillis()+864000000;
+        this.dischargeDate= sdf.format(dischargeTime);
     }
 }
