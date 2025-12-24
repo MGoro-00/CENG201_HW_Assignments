@@ -34,7 +34,7 @@ public class TreatmentQueue {
         int temp= front;
         IO.println("         ID         ARRIVAL TIME");
         while(temp<=rear){
-            IO.println(temp+"."+array[temp].patientId+"                 "+array[temp].arrivalTime);
+            IO.println(temp+"."+array[temp].patientId+"                 "+array[temp].arrivalDate);
             temp++;
         }
     }
