@@ -4,7 +4,7 @@ public class DischargeStack{
     public void push(DischargeRecord record){
         Node<DischargeRecord> newNode = new Node<>(record);
         newNode.next=top;
-           top=newNode;
+        top=newNode;
     }
     public DischargeRecord pop(){
         if(isEmpty()){

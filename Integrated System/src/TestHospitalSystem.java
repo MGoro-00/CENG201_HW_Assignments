@@ -21,6 +21,5 @@ void main() {
     hospital.sortSeverity();
     IO.println("Final System State :");
     hospital.systemState();
-
 }
 
