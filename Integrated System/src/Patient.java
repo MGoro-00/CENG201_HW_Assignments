@@ -4,10 +4,10 @@ public class Patient{
     int severity ;
     int age;
     static int idCounter=1;
-    public Patient(String name, int severity, int age){
-        this.name=name;
-        this.age=age;
-        this.severity=severity;
+    public Patient(String n,int s,int a){
+        this.name=n;
+        this.age=a;
+        this.severity=s;
         this.id=idCounter;
         idCounter+=1;
     }
