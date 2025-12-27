@@ -17,6 +17,7 @@ void main() {
     testQueue.enqueue(p7);
     testQueue.enqueue(p8);
     testQueue.printQueue();
+    IO.println();
     testQueue.dequeue();
     testQueue.dequeue();
     testQueue.dequeue();

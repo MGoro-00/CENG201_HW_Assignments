@@ -10,16 +10,20 @@ void main() {
     hospital.newPatient(new Patient("Patient8",10,40),true);
     hospital.newPatient(new Patient("Patient9",8,50),true);
     hospital.newPatient(new Patient("Patient10",9,55),true);
-    IO.println("Adding Manual Discharge Records............");
+    IO.println("Adding Manual Discharge Records :");
     hospital.addDischargeRecord(new Patient("Patient11",2,19));
     hospital.addDischargeRecord(new Patient("Patient12",1,21));
-    IO.println("Processing 4 Requests (Priority First)..............");
+    IO.println("Processing 4 Requests (Priority First) :");
     hospital.processTreatment();
     hospital.processTreatment();
     hospital.processTreatment();
     hospital.processTreatment();
+    IO.println();
+    IO.println("System State Before Sorting :");
+    hospital.systemState();
     hospital.sortSeverity();
-    IO.println("Final System State :");
+    IO.println();
+    IO.println("Final System State After Sorting :");
     hospital.systemState();
 }
 

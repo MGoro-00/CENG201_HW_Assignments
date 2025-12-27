@@ -16,5 +16,5 @@ public class DischargeStack {
         return temp;
     }
     public String peek(){return "ID: "+stack[top].patientId+"Discharge time:"+stack[top].dischargeDate;}
-    public void printStack(){for (int i=top;i>0;i--){IO.println(i+". "+"ID:  "+stack[i].patientId+"  Discharge time:"+stack[i].dischargeDate);}}
+    public void printStack(){for (int i=top;i>0;i--){IO.println(i+". "+"ID:  "+stack[i].patientId+"  Discharge time: "+stack[i].dischargeDate);}}
 }
